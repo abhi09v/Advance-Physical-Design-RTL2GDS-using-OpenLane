@@ -109,7 +109,7 @@
   
   The application software enters the system software. OS handles I/O operations, memories and many low level functions.This program passes to Compiler which changes the program to Assembly language(machine specific) .Now Assembler converts the instruction set to machine language (binary numbers).Then system software converts the apllication software into binary language.These binary numbers enter our chip layout and according different functionanlity is performed.
   
-  <img src="images/d1_pro.png">
+  <img src="images/d1_pro.JPG">
    
  ## SoC Design and OpenLANE
  
@@ -138,7 +138,7 @@
    [OpenLANE](https://github.com/efabless/openlane) is an automated RTL to GDSII flow which includes various open-source components such as OpenROAD, Yosys, Magic, Fault, Netgen, SPEF-Extractor. It also facilitates to add custom design exploration and optimization scripts.
    The detailed diagram of the OpenLANE architecture is shown below:
    
-   <img src="images/d1openlane_flow.png">
+   <img src="images/d1openlane_flow.JPG">
    
    OpenLANE flow consists of several stages. All flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively(not autonomous as shown here.
 #RTL to GDS flow
@@ -187,7 +187,7 @@
    - OpenLANE supports two modes of operation: interactive and autonomous.
    - To use interactive mode use `-interactive` flag with `./flow.tcl`
    
-   <img src="images/d1_openlane_invoke.JPG"> 
+   <img src="images/d1_openlane_invoke.png"> 
    
  ### Design Preparation
    The first step after invoking OpenLANE is to import the openlane package of required version. This is done using following command. Here 0.9 is the required version of OpenLANE.
@@ -202,7 +202,7 @@
      <br />`-tag <name-for-current-run>` - All the files generated during the flow will be stored in a directory named `<name-for-current-run>`
      <br />`-overwrite` - If a directory name mentioned in `-tag` already exists, it will be overwritten.
    
-   <img src="images/d1_openlane_design_prep.JPG"> 
+   <img src="images/d1_openlane_design_prep.png"> 
    
    During the design preparation the technology LEF and cell LEF files are merged together to obtain a `merged.lef` file. The LEF file contains information like the layer information, set of design rules, information about each standard cell which is required for place and route. 
     
@@ -211,7 +211,7 @@
    
     run_synthesis
    
-   <img src="images/d1_openlane_synthesis.JPG">
+   <img src="images/d1_openlane_synthesis.png">
    
 # Day 2 - Good floorplan vs bad floorplan and introduction to library cells
  ## Chip Floorplanning
