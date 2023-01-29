@@ -85,7 +85,7 @@
   
   - Package: It is a case that surrounds the circuit material to protect it from physical damage or corrosion and allow mounting of the electrical contacts connecting it to the printed circuit board (PCB). eg.IC with 48 pins and Quad Flat No-Leads(QFN) package.
   
-   <img src="images/d1_package.JPG">
+   <img src="images/d1_package.png">
  
   - Die: A die is a small block of semiconducting material on which a given functional circuit is fabricated and take whole size of chip.
   
