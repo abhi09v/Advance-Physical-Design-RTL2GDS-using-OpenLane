@@ -233,7 +233,7 @@
    
    Successful floorplanning gives a `def` file as output. This file contains the die area and placement of standard cells.
    
-   <img src="images/d2_floorplan_def.JPG">
+   <img src="images/d2_floorplan_def.png">
  
  ### Review Floorplan Layout in Magic
    Magic Layout Tool is used for visualizing the layout after floorplan. In order to view floorplan in Magic, following three files are required:
@@ -241,9 +241,9 @@
     2. Merged LEF file (`merged.lef`)
     3. DEF File
     
-   <img src="images/d2_floorplan_invoke_magic_cmd.JPG">
-   <img src="images/d2_floorplan_magic.JPG">
-   <img src="images/d2_floorplan_magic_expand.JPG">
+   <img src="images/d2_floorplan_invoke_magic_cmd.png">
+   <img src="images/d2_floorplan_magic.png">
+   <img src="images/d2_floorplan_magic_expand.png">
  
  ## Placement
  ### Placement and Optimization
@@ -260,15 +260,15 @@
    
    Placement is carried out as an iterative process till the value of overflow converges to 0.
    
-   <img src="images/d2_placement_invoke_magic_cmd.JPG">
-   <img src="images/d2_placement_magic.JPG">
-   <table border="0"><tr><td><img src="images/d2_placement_magic_expand.JPG"> </td><td> <img src="images/d2_placement_magic_expand_2.JPG"> </td></tr></table>
+   <img src="images/d2_placement_invoke_magic_cmd.png">
+   <img src="images/d2_placement_magic.png">
+   <table border="0"><tr><td><img src="images/d2_placement_magic_expand.png"> </td><td> <img src="images/d2_placement_magic_expand_2.png"> </td></tr></table>
    
  ## Cell Design and Characterization Flows
  ### Cell Design Flow
   In a border view Cell Design flow is are the stages or steps involved in the entire design of a standard cell. The figure below shows the input, output and design steps involved in cell design
   
-  <img src="images/d2_cell_design_flow.PNG">
+  <img src="images/d2_cell_design_flow.JPG">
  
  ### Characterization Flow
   There are few problems of Standard Cells in polygon level format (GDSII). Some of them are:
@@ -294,12 +294,12 @@
   
   <table border="0">
   <tr>
-    <td><img src="images/d3_magic_layout_with_error.JPG"> </td>
-    <td> <img src="images/d3_magic_with_error.JPG"> </td>
+    <td><img src="images/d3_magic_layout_with_error.png"> </td>
+    <td> <img src="images/d3_magic_with_error.png"> </td>
   </tr>
   <tr>
-    <td><img src="images/d3_magic_layout_without_error.JPG"> </td>
-    <td> <img src="images/d3_magic_without_error.JPG"> </td>
+    <td><img src="images/d3_magic_layout_without_error.png"> </td>
+    <td> <img src="images/d3_magic_without_error.png"> </td>
   </tr>
   </table>
   
@@ -319,12 +319,12 @@
   
   <table border="0">
   <tr>
-    <td> <center>Commands for Extraction</center> <br /><img src="images/d3_spice_ext_1.JPG"> </td>
-    <td> <center>.ext file</center> <img src="images/d3_spice_ext_2.JPG"> </td>
+    <td> <center>Commands for Extraction</center> <br /><img src="images/d3_spice_ext_1.png"> </td>
+    <td> <center>.ext file</center> <img src="images/d3_spice_ext_2.png"> </td>
   </tr>
   <tr>
-    <td> <center>Generated SPICE Netlist</center> <img src="images/d3_spice_1.JPG"> </td>
-    <td> <center>Modified SPICE Netlist</center> <img src="images/d3_spice_2.JPG"> </td>
+    <td> <center>Generated SPICE Netlist</center> <img src="images/d3_spice_1.png"> </td>
+    <td> <center>Modified SPICE Netlist</center> <img src="images/d3_spice_2.png"> </td>
   </tr>
   </table>
   
@@ -338,11 +338,11 @@
     
     ngspice 1 -> plot Y vs time A
     
-   <img src="images/d3_ngspice_2.JPG">
+   <img src="images/d3_ngspice_2.png">
    
    Below figure shows the waveform of Inverter output vs input w.r.t. time. Many timing parameters like rise time delay, fall time delay, propagation delay are calculated using this waveform.
    
-   <img src="images/d3_ngspice_3.JPG">
+   <img src="images/d3_ngspice_3.png">
   
 # Day 4 - Pre-layout timing analysis and importance of good clock tree
   In order to use a design of standard cell layout in OpenLANE RTL2GDS flow, it is converted to a standard cell LEF. LEF stands for Library Exchange Format. The entire design has to be analyzed for any timing violations after addition or change in the design.
