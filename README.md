@@ -7,7 +7,7 @@
   - [List of All Open-Source Tools Used](#list-of-all-open-source-tools-used)
   - [Setting Up Environment](#setting-up-environment)
   - [Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](#day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
-    - [Basic IC Design Terminologies](#basic-ic-design-terminologies)
+    - [IC Design Terminologies](#ic-design-terminologies)
     - [Introduction To RISC-V](#introduction-to-risc-v)
     - [SoC Design and OpenLANE](#soc-design-and-openlane)
       - [Open-Source PDK Directory Structure](#open-source-pdk-directory-structure)
