@@ -119,7 +119,7 @@
  -EDA tool (OpenROAD, OpenLANE)
  -PDK Data (SKYWater_130)
  
-  <img src="images/d1_tools.png">
+  <img src="images/d1_tools.JPG">
  
  
  ### Open-Source PDK Directory Structure
