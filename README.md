@@ -109,7 +109,7 @@
   
   The application software enters the system software. OS handles I/O operations, memories and many low level functions.This program passes to Compiler which changes the program to Assembly language(machine specific) .Now Assembler converts the instruction set to machine language (binary numbers).Then system software converts the apllication software into binary language.These binary numbers enter our chip layout and according different functionanlity is performed.
   
-  <img src="images/d1_pro.JPG">
+  <img src="images/d1_pro.png">
    
  ## SoC Design and OpenLANE
  
@@ -119,7 +119,7 @@
  -EDA tool (OpenROAD, OpenLANE)
  -PDK Data (SKYWater_130)
  
-  <img src="images/d1_tools.JPG">
+  <img src="images/d1_tools.png">
  
  
  ### Open-Source PDK Directory Structure
