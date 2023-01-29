@@ -233,7 +233,7 @@
    
    Successful floorplanning gives a `def` file as output. This file contains the die area and placement of standard cells.
    
-   <img src="images/d2_floorplan_def.png">
+   <img src="images/d2_floorplan_def.JPG">
  
  ### Review Floorplan Layout in Magic
    Magic Layout Tool is used for visualizing the layout after floorplan. In order to view floorplan in Magic, following three files are required:
@@ -241,8 +241,8 @@
     2. Merged LEF file (`merged.lef`)
     3. DEF File
     
-   <img src="images/d2_floorplan_invoke_magic_cmd.png">
-   <img src="images/d2_floorplan_magic.png">
+   <img src="images/d2_floorplan_invoke_magic_cmd.JPG">
+   <img src="images/d2_floorplan_magic.JPG">
    <img src="images/d2_floorplan_magic_expand.png">
  
  ## Placement
