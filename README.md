@@ -78,8 +78,9 @@
   - [VSDFlow](https://github.com/kunalg123/vsdflow) - Installs Yosys, Magic, OpenTimer, OpenSTA and some other supporting tools
   - [OpenLANE Build Scripts](https://github.com/nickson-jose/openlane_build_script) - Install all required OpenROAD and some supporting tools
   
-# Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
- ## Basic IC Design Terminologies
+# Day 1 - Open-source EDA, OpenLANE and Sky130 PDK
+ ## Talk to computers
+ ## IC Design Terminologies
   During the Physical Designing, one will come across multiple terminologies that are frequently used. Some of them are mentioned below:
   - Package: It is a case that surrounds the circuit material to protect it from physical damage or corrosion and allow mounting of the electrical contacts connecting it to the printed circuit board (PCB). The below snippet shows an IC with 48 pins and Quad Flat No-Leads(QFN) package.
   - Die: A die is a small block of semiconducting material on which a given functional circuit is fabricated.
