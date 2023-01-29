@@ -85,9 +85,8 @@
   
   - Package: It is a case that surrounds the circuit material to protect it from physical damage or corrosion and allow mounting of the electrical contacts connecting it to the printed circuit board (PCB). eg.IC with 48 pins and Quad Flat No-Leads(QFN) package.
   
-   <img src="images/d1_ic_terms.JPG">
+   <img src="images/d1_package.JPG">
  
-  
   - Die: A die is a small block of semiconducting material on which a given functional circuit is fabricated and take whole size of chip.
   
   - Chip: It is situated in centre of package which is connected through wire bonds to the Packages
@@ -106,8 +105,31 @@
    - It supports variable-length instruction encoding.
    A brief design for RISC-V core can be refered [here](https://github.com/ShonTaware/RISC-V_Core_4_Stage)
    
+  #Software to Harware flow 
+  
+  The application software enters the system software. OS handles I/O operations, memories and many low level functions.This program passes to Compiler which changes the program to Assembly language(machine specific) .Now Assembler converts the instruction set to machine language (binary numbers).Then system software converts the apllication software into binary language.These binary numbers enter our chip layout and according different functionanlity is performed.
+  
+  <img src="images/d1_pro.JPG">
+   
  ## SoC Design and OpenLANE
+ 
+ Open souce ASIC design tools-
+ 
+ -RTL models (github.com, librecores.org)
+ -EDA tool (OpenROAD, OpenLANE)
+ -PDK Data (SKYWater_130)
+ 
+  <img src="images/d1_tools.JPG">
+ 
+ 
  ### Open-Source PDK Directory Structure
+  
+   #PDK (Process Design Kit)
+  
+  It is foundaries/lab specific which consists of tecnology node information, Process Design Rules (to verify DRC, LVC, PEX, etc), device model(Paramenters), I/O libraries, Standard cell libraries, macros files, lef files.
+   Therse repo is being used while installing setup [VSDFlow](https://github.com/kunalg123/vsdflow) (for installing Yosys, OpenSTA, Magic, OpenTimer, netgent, etc) and [OpenLANE Build Scripts](https://github.com/nickson-jose/openlane_build_script).
+  
+ 
    All the Process Design Kit(PDK) are listed under the `pdks/` directory. Along with the `Sky130A` we are using some other open-source PDKs and other related files are also available in the directory. The location of the PDK directory is given of `$PDK_ROOT` variable. 
     
    <img src="images/d1_pdk_directory_structure.JPG">
@@ -116,32 +138,39 @@
    [OpenLANE](https://github.com/efabless/openlane) is an automated RTL to GDSII flow which includes various open-source components such as OpenROAD, Yosys, Magic, Fault, Netgen, SPEF-Extractor. It also facilitates to add custom design exploration and optimization scripts.
    The detailed diagram of the OpenLANE architecture is shown below:
    
-   <img src="images/openlane_flow.png">
+   <img src="images/d1openlane_flow.png">
    
-   OpenLANE flow consists of several stages. By default all flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively as shown here.
-
+   OpenLANE flow consists of several stages. All flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively(not autonomous as shown here.
+#RTL to GDS flow
+<img src="images/d1_RTL2GDS.png"> 
   1. Synthesis
       1. `yosys` - Performs RTL synthesis
       2. `abc` - Performs technology mapping
       3. `OpenSTA` - Pefroms static timing analysis on the resulting netlist to generate timing reports
+   <img src="images/d1_synthesis.png">   
   2. Floorplan and PDN
       1. `init_fp` - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
       2. `ioplacer` - Places the macro input and output ports
       3. `pdn` - Generates the power distribution network
       4. `tapcell` - Inserts welltap and decap cells in the floorplan
+   <img src="images/d1_floorplanning.png">    
   3. Placement
       1. `RePLace` - Performs global placement
       2. `Resizer` - Performs optional optimizations on the design
       3. `OpenPhySyn` - Performs timing optimizations on the design
       4. `OpenDP` - Perfroms detailed placement to legalize the globally placed components
+     <img src="images/d1_placement.png"> 
   4. CTS
       1. `TritonCTS` - Synthesizes the clock distribution network (the clock tree)
+      <img src="images/d1_cts.png">  
   5. Routing *
       1. `FastRoute` - Performs global routing to generate a guide file for the detailed router
       2. `TritonRoute` - Performs detailed routing
       3. `SPEF-Extractor` - Performs SPEF extraction
+      <img src="images/d1_routing.png">  
   6. GDSII Generation
       1. `Magic` - Streams out the final GDSII layout file from the routed def
+   
   7. Checks
       1. `Magic` - Performs DRC Checks & Antenna Checks
       2. `Netgen` - Performs LVS Checks
