@@ -95,7 +95,7 @@
   
   - Pads: These are the interfaces between the internal signals of a chip and the external pins
  
-  <img src="images/d1_ic_terms.png">
+  <img src="images/d1_ic_terms.JPG">
  
  ## Introduction To RISC-V
    [RISC-V](https://riscv.org/technical/specifications) is a new ISA that's available under open, free and non-restrictive licences. RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture.
