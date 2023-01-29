@@ -95,7 +95,7 @@
   
   - Pads: These are the interfaces between the internal signals of a chip and the external pins
  
-  <img src="images/d1_ic_terms.JPG">
+  <img src="images/d1_ic_terms.png">
  
  ## Introduction To RISC-V
    [RISC-V](https://riscv.org/technical/specifications) is a new ISA that's available under open, free and non-restrictive licences. RISC-V ISA delivers a new level of free, extensible software and hardware freedom on architecture.
@@ -109,7 +109,7 @@
   
   The application software enters the system software. OS handles I/O operations, memories and many low level functions.This program passes to Compiler which changes the program to Assembly language(machine specific) .Now Assembler converts the instruction set to machine language (binary numbers).Then system software converts the apllication software into binary language.These binary numbers enter our chip layout and according different functionanlity is performed.
   
-  <img src="images/d1_pro.JPG">
+  <img src="images/d1_pro.png">
    
  ## SoC Design and OpenLANE
  
@@ -119,7 +119,7 @@
  -EDA tool (OpenROAD, OpenLANE)
  -PDK Data (SKYWater_130)
  
-  <img src="images/d1_tools.JPG">
+  <img src="images/d1_tools.png">
  
  
  ### Open-Source PDK Directory Structure
@@ -132,7 +132,7 @@
  
    All the Process Design Kit(PDK) are listed under the `pdks/` directory. Along with the `Sky130A` we are using some other open-source PDKs and other related files are also available in the directory. The location of the PDK directory is given of `$PDK_ROOT` variable. 
     
-   <img src="images/d1_pdk_directory_structure.JPG">
+   <img src="images/d1_pdk_directory_structure.png">
   
  ### What is OpenLANE
    [OpenLANE](https://github.com/efabless/openlane) is an automated RTL to GDSII flow which includes various open-source components such as OpenROAD, Yosys, Magic, Fault, Netgen, SPEF-Extractor. It also facilitates to add custom design exploration and optimization scripts.
