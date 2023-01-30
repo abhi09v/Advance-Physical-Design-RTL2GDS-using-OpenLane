@@ -109,7 +109,7 @@
   
   The application software enters the system software. OS handles I/O operations, memories and many low level functions.This program passes to Compiler which changes the program to Assembly language(machine specific) .Now Assembler converts the instruction set to machine language (binary numbers).Then system software converts the apllication software into binary language.These binary numbers enter our chip layout and according different functionanlity is performed.
   
-  <img src="images/d1_pro.png">
+  <img src="images/d1_pro.JPG">
    
  ## SoC Design and OpenLANE
  
@@ -437,8 +437,8 @@ add_lefs -src $lefs`
   
     run_cts
     
-   <img src="images/d4_cts_1.jpg">
-   <img src="images/d4_cts_2.jpg">
+   <img src="images/d4_cts_1.JPG">
+   <img src="images/d4_cts_2.JPG">
    
    
 
@@ -449,7 +449,7 @@ add_lefs -src $lefs`
    
     gen_pdn
     
-   <img src="images/d5_pdn.jpg">
+   <img src="images/d5_pdn.JPG">
    
  ## Routing using TritonRoute
    OpenLANE uses TritonRoute, an open source router for modern industrial designs. The router consists of several main building blocks, including pin access analysis, track assignment, initial detailed routing, search and repair, and a DRC engine.
