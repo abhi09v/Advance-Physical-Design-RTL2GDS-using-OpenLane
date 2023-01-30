@@ -353,14 +353,14 @@
   
     <layer-name> <X-or-Y> <track-offset> <track-pitch>
     
-  <img src="images/d4_track_info.JPG">
+  <img src="images/d4_track_info.png">
   
   To create a standard cell LEF from an existing layout, some important aspects need to be taken into consideration.
   1. The height of cell be appropriate, so that the `VPWR` and `VGND` properly fall on the power distribution network.
   2. The width of cell should be an odd multiple of the minimum permissible grid size.
   3. The input and ouptut of the cell fall on intersection of the vertical and horizontal grid line.
   
-  <img src="images/d4_valid_layout.JPG">  
+  <img src="images/d4_valid_layout.png">  
   
  ## Timing Analysis using OpenSTA
   The Static Timing Analysis(STA) of the design is carried out using the OpenSTA tool. The analysis can be done in to different ways.
@@ -412,7 +412,7 @@
    
     gen_pdn
     
-   <img src="images/d5_pdn.JPG">
+   <img src="images/d5_pdn.png">
    
  ## Routing using TritonRoute
    OpenLANE uses TritonRoute, an open source router for modern industrial designs. The router consists of several main building blocks, including pin access analysis, track assignment, initial detailed routing, search and repair, and a DRC engine.
@@ -427,8 +427,8 @@
     
    <table border="0">
    <tr>
-    <td> <img src="images/d5_routing.JPG"> </td>
-    <td> <img src="images/d5_routing_2.JPG"> </td>
+    <td> <img src="images/d5_routing.png"> </td>
+    <td> <img src="images/d5_routing_2.png"> </td>
    </tr>
    </table>
     
@@ -441,7 +441,7 @@
     
    The below snippet shows a small part of the `.spef` file.
    
-   <img src="images/d5_spef_file.JPG">
+   <img src="images/d5_spef_file.png">
    
 # References
   - RISC-V: https://riscv.org/
