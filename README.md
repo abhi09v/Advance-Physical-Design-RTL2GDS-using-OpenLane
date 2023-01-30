@@ -378,6 +378,14 @@ add_lefs -src $lefs`
 
  <img src="images/7.png">
  
+ <img src="images/12.png">
+  <img src="images/13.png">
+ 
+ Then run synthesis
+ <img src="images/13.png">
+ 
+ 
+ 
  
   
 
@@ -398,15 +406,23 @@ add_lefs -src $lefs`
   
   <table border="0">
   <tr>
-    <td> <img src="images/d4_sta_1.JPG"> </td>
-    <td> <img src="images/d4_sta_2.JPG"> </td>
+    <td> <img src="images/14.png"> </td>
+    <td> <img src="images/15.png"> </td>
   </tr>
   </table>
+  Change layout to meet slack
+   <img src="images/16.png">
   
   If the design produces any setup timing violaions in the analysis, it can be eliminated or reduced using techniques as follows:
   1. Increase the clock period (Not always possible as generally operating frequency is freezed in the specifications)
   2. Scaling the buffers (Causes increase in design area)
   3. Restricting the maximum fan-out of an element. 
+  <tr>
+    <td> <img src="image/18.png"> </td>
+    <td> <img src="image/19.png"> </td>
+    <td> <img src="images/20.png"> </td>
+   </tr>
+   </table>
   
  ## Clock Tree Synthesis using TritonCTS
   Clock Tree Synthesis(CTS) is a process which makes sure that the clock gets distributed evenly to all sequential elements in a design. The goal of CTS is to minimize the clock latency and skew.
@@ -423,6 +439,8 @@ add_lefs -src $lefs`
     
    <img src="images/d4_cts_1.JPG">
    <img src="images/d4_cts_2.JPG">
+   
+   
 
 # Day 5 - Final steps for RTL2GDS
  ## Generation of Power Distribution Network
