@@ -263,7 +263,7 @@
    <img src="images/d2_placement_invoke_magic_cmd.png">
    <img src="images/d2_placement_magic.png">
  
-   <table border="0"><tr><td><img src="images/d2_placement_magic_expand.png"> </td><td> <img src="images/d2_placement_magic_expand_2.png"> </td></tr></table>
+   <table border="0"><tr><td><img src="images/d2_placement_magic_expand_2.png"> </td><td> <img src="images/d2_placement_magic_expand_2.png"> </td></tr></table>
    
  ## Cell Design and Characterization Flows
  ### Cell Design Flow
