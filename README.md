@@ -355,6 +355,8 @@
     
   <img src="images/d4_track_info.png">
   
+  Horizontal track pitch = 0.46, verticle track pitch = 0.34, horizontal offset = 0.23, verticle offset = 0.17
+  <img src="images/9.png">
   To create a standard cell LEF from an existing layout, some important aspects need to be taken into consideration.
   1. The height of cell be appropriate, so that the `VPWR` and `VGND` properly fall on the power distribution network.
   2. The width of cell should be an odd multiple of the minimum permissible grid size.
@@ -362,6 +364,23 @@
   
   <img src="images/d4_valid_layout.png">  
   
+  Then open our new inverter mag.
+
+  `magic -T sky130A.tech sky130_vsdinv.mag`
+   edited config.tcl is shown below:
+  <img src="images/2.png"> 
+  
+  `cp sky130_fd_sc_hd__*  /home/abhishek_v/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
+  <img src="images/6.png">
+ 
+ `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs`
+
+ <img src="images/7.png">
+ 
+ 
+  
+
  ## Timing Analysis using OpenSTA
   The Static Timing Analysis(STA) of the design is carried out using the OpenSTA tool. The analysis can be done in to different ways.
   - Inside OpenLANE flow: This is by invoking `openroad` command inside the OpenLANE flow. In the openroad OpenSTA is invoked.
