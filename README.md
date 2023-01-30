@@ -233,7 +233,7 @@
    
    Successful floorplanning gives a `def` file as output. This file contains the die area and placement of standard cells.
    
-   <img src="images/d2_floorplan_def.JPG">
+  
  
  ### Review Floorplan Layout in Magic
    Magic Layout Tool is used for visualizing the layout after floorplan. In order to view floorplan in Magic, following three files are required:
@@ -418,8 +418,8 @@ add_lefs -src $lefs`
   2. Scaling the buffers (Causes increase in design area)
   3. Restricting the maximum fan-out of an element. 
   <tr>
-    <td> <img src="image/18.png"> </td>
-    <td> <img src="image/19.png"> </td>
+    <td> <img src="images/18.png"> </td>
+    <td> <img src="images/19.png"> </td>
     <td> <img src="images/20.png"> </td>
    </tr>
    </table>
