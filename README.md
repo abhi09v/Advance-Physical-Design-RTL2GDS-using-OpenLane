@@ -437,8 +437,8 @@ add_lefs -src $lefs`
   
     run_cts
     
-   <img src="images/d4_cts_1.JPG">
-   <img src="images/d4_cts_2.JPG">
+   <img src="images/d4_cts_1.jpg">
+   <img src="images/d4_cts_2.jpg">
    
    
 
@@ -449,7 +449,7 @@ add_lefs -src $lefs`
    
     gen_pdn
     
-   <img src="images/d5_pdn.png">
+   <img src="images/d5_pdn.jpg">
    
  ## Routing using TritonRoute
    OpenLANE uses TritonRoute, an open source router for modern industrial designs. The router consists of several main building blocks, including pin access analysis, track assignment, initial detailed routing, search and repair, and a DRC engine.
@@ -465,20 +465,10 @@ add_lefs -src $lefs`
    <table border="0">
    <tr>
     <td> <img src="images/d5_routing.JPG"> </td>
-    <td> <img src="images/d5_routing_2.JPG"> </td>
+    
    </tr>
    </table>
-    
- ## SPEF File Generation
-   Standard Parasitic Exchange Format (SPEF) is an IEEE standard for representing parasitic data of wires in a chip in ASCII format. Non-ideal wires have parasitic resistance and capacitance that are captured by SPEF. 
-   OpenLANE consists of a tool named, SPEF_EXTRACTOR for generation of SPEF file. It is a `python` based parser which takes the `LEF` and `DEF` files as input arguments and generates the SPEF file. The following command is used for invoking the SPEC_EXTRACTOR.
-   
-    cd <path-to-SPEF_EXTRACTOR-tool-directory>
-    python3 main.py <path-to-LEF-file> <path-to-DEF-file-created-after-routing>
-    
-   The below snippet shows a small part of the `.spef` file.
-   
-   <img src="images/d5_spef_file.JPG">
+
    
 # References
   - RISC-V: https://riscv.org/
@@ -486,7 +476,7 @@ add_lefs -src $lefs`
   - OpenLANE: https://github.com/The-OpenROAD-Project/OpenLane
 
 # Acknowledgement
+ 
   - [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
-  - [Nickson Jose](https://github.com/nickson-jose)
-  - [Praharsha Mahurkar](https://github.com/praharshapm)
-  - Akurathi Radhika
+  - [Nickson Jose](https://github.com/nickson-jose) ASIC design Engineer and workshop instructor
+
