@@ -263,7 +263,7 @@
    <img src="images/d2_placement_invoke_magic_cmd.png">
    <img src="images/d2_placement_magic.png">
  
-   <table border="0"><tr><td><img src="images/d2_placement_magic_expand_2.png"> </td><td> <img src="images/d2_placement_magic_expand_2.png"> </td></tr></table>
+   <table border="0"><tr><td><img src="images/d2_placement_magic_expand_2 (2)"> </td><td> <img src="images/d2_placement_magic_expand_2.png"> </td></tr></table>
    
  ## Cell Design and Characterization Flows
  ### Cell Design Flow
@@ -300,7 +300,7 @@
   </tr>
   <tr>
     <td><img src="images/d3_magic_layout_without_error.png"> </td>
-    <td> <img src="images/d3_magic_without_error.png"> </td>
+    <td> <img src="images/d3_magic_without_error.JPG"> </td>
   </tr>
   </table>
   
@@ -321,7 +321,7 @@
   <table border="0">
   <tr>
     <td> <center>Commands for Extraction</center> <br /><img src="images/d3_spice_ext_1.png"> </td>
-    <td> <center>.ext file</center> <img src="images/d3_spice_ext_2.png"> </td>
+    <td> <center>.ext file</center> <img src="images/d3_spice_ext_2.JPG"> </td>
   </tr>
   <tr>
     <td> <center>Generated SPICE Netlist</center> <img src="images/d3_spice_1.png"> </td>
