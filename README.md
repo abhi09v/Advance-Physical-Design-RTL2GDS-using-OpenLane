@@ -464,8 +464,8 @@ add_lefs -src $lefs`
     
    <table border="0">
    <tr>
-    <td> <img src="images/d5_routing.png"> </td>
-    <td> <img src="images/d5_routing_2.png"> </td>
+    <td> <img src="images/d5_routing.JPG"> </td>
+    <td> <img src="images/d5_routing_2.JPG"> </td>
    </tr>
    </table>
     
@@ -478,7 +478,7 @@ add_lefs -src $lefs`
     
    The below snippet shows a small part of the `.spef` file.
    
-   <img src="images/d5_spef_file.png">
+   <img src="images/d5_spef_file.JPG">
    
 # References
   - RISC-V: https://riscv.org/
